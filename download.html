@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Chronoverse</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Full Bright Background */
+        .background {
+            background-image: url('https://i.postimg.cc/HxJCzH5T/Download_Background.jpg');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        /* Logo Fix */
+        .main-icon {
+            width: 350px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin: 10px 0 60px 0;
+            font-weight: normal;
+        }
+
+        .download-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons Styled Exactly Like the Image */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #1e6d1e; /* Darker green like the image */
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            /* Sharp corners - No rounding */
+            border: 1px solid #2a8a2a; 
+            cursor: pointer;
+            transition: filter 0.2s; /* Only transition brightness */
+        }
+
+        /* No movement, just brightness on hover and click */
+        .btn:hover, .btn:active {
+            filter: brightness(1.3);
+        }
+
+        .btn img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .button-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .main-icon { width: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <img src="https://i.postimg.cc/x8cqLWjN/chronoverse-19-01-2026.png" alt="Chronoverse" class="main-icon">
+
+        <h1>Create Games, Play Games</h1>
+        <p class="subtitle">
+            Create games and worlds spanning a variety of genres,<br>
+            From first-person shooters, survival games, and role-playing adventures.
+        </p>
+
+        <div class="download-title">Download Now!</div>
+        <div class="button-container">
+            <a href="#" class="btn"><img src="https://i.postimg.cc/FRfQpmcX/Download_Android2017.png" alt="Android"></a>
+            <a href="#" class="btn"><img src="https://i.postimg.cc/1tgZBP6S/Download_Windows.png" alt="Windows"></a>
+            <a href="#" class="btn"><img src="https://i.postimg.cc/DZWK6FsT/Download_Windows_Studio.png" alt="Studio"></a>
+            <a href="#" class="btn"><img src="https://i.postimg.cc/G2B1KrY1/Downloadi_OS2017.png" alt="iOS"></a>
+        </div>
+    </div>
+
+</body>
+</html>
